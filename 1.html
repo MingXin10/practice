@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <svg width="600" height="400" style="border: 1px solid black" id="painter">
+      <!-- <rect width="50" height="50" fill="#afafaf" id="foo"></rect>
+      <rect width="50" height="50" fill="#afafaf" x="100"></rect>
+      <rect width="50" height="50" fill="#afafaf" x="200" class="bar"></rect> -->
+    </svg>
+    <script src="//d3js.org/d3.v3.min.js"></script>
+    <script>
+      // d3.select('#foo').attr('fill', 'red').attr('y', '10')
+      d3.select('#painter') //選擇svg畫布
+        .append('circle') //加入一個圓
+        .attr('fill', '#afafaf') //設定灰色填滿
+        .attr('r', 50) //半徑為50
+        .attr('cx', 100)
+        .attr('cy', 100)
+    </script>
+  </body>
+</html>
